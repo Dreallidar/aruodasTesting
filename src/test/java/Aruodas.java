@@ -24,8 +24,20 @@ public class Aruodas {
 
     @Test
     public void testAddress(){
-        Plot address = new Plot("Vilnius","Vilniaus m.","Antakalnis","Laisvės pr.","85","315616161594");
+        Plot address = new Plot("Vilnius","Vilniaus","Antakalnis","Laisvės pr.","85","38","315616161594");
         address.fillAdd();
+        Assert.assertEquals(true,true);
+    }
+    @Test
+    public void testAddress2(){
+        Plot address = new Plot("Šiauliai","Žaliūkių k.","","Architekt","85","38","315616161594");
+        address.fillAdd();
+        Assert.assertEquals(true,true);
+    }@Test
+    public void addressArea(){
+        Plot address = new Plot("Šiauliai","Žaliūkių k.","","Architekt","85","38","315616161594");
+        address.fillAdd();
+
         Assert.assertEquals(true,true);
     }
 
