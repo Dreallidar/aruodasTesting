@@ -26,6 +26,7 @@ public class Details{
     public void fillNoOfFloors() {
         Utils._driver.findElement(By.name("FAreaOverAll")).sendKeys(this.noOfFloors);
 
+
     }
     
 }
